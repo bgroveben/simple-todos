@@ -4,4 +4,4 @@ https://www.meteor.com/tutorials/react/creating-an-app
 
 I am here:
 
-https://www.meteor.com/tutorials/react/creating-an-app
+https://www.meteor.com/tutorials/react/components
