@@ -2,7 +2,7 @@ Time to learn Meteor and React. This app follows the tutorial 'ToDo App with Rea
 https://www.meteor.com/tutorials/react/creating-an-app
 
 I am here:  
-https://www.meteor.com/tutorials/react/forms-and-events
+https://www.meteor.com/tutorials/react/update-and-remove
 
 `{/* This is a JSX comment for React files */}`  
 `// This also comments JSX files`  
