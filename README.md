@@ -4,4 +4,4 @@ https://www.meteor.com/tutorials/react/creating-an-app
 
 I am here:
 
-https://www.meteor.com/tutorials/react/collections
+https://www.meteor.com/tutorials/react/forms-and-events
