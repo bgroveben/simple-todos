@@ -31,7 +31,7 @@ class App extends Component {
     });
   }
   renderTasks() {
-    // Filter tasks in renderTasks 
+    // Filter tasks in renderTasks
     let filteredTasks = this.props.tasks;
     if (this.state.hideCompleted) {
       filteredTasks = filteredTasks.filter(task => !task.checked);
@@ -79,5 +79,7 @@ App.propTypes = {
 export default createContainer(() => {
   return {
     tasks: Tasks.find({}, { sort: { createdAt: -1 } }).fetch(),
+    // Update data container to return incomplete count
+    incompleteCount: Tasks.find({ checked: { $ne: true } }).count(), 
   };
 }, App);
