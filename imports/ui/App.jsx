@@ -89,5 +89,6 @@ export default createContainer(() => {
     tasks: Tasks.find({}, { sort: { createdAt: -1 } }).fetch(),
     // Update data container to return incomplete count
     incompleteCount: Tasks.find({ checked: { $ne: true } }).count(),
+    currentUser: Meteor.user(),
   };
 }, App);
