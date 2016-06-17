@@ -1,5 +1,5 @@
 // To use the Blaze UI component from the accounts-ui package, we need to wrap it in a React component.
-import React, { Component } rom 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Template } from 'meteor/templating';
 import { Blaze } from 'meteor/blaze';
