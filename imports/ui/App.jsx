@@ -6,6 +6,13 @@ import Task from './Task.jsx';
 
 // App component -- represents the whole app
 class App extends Component {
+  constructor(props) {
+    super(props);
+    // Add initial state to App component 
+    this.state = {
+      hideCompleted: false,
+    };
+  }
   handleSubmit(event) {
     event.preventDefault();
     // find the text field via the React ref
