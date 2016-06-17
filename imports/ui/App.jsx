@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
+import { Meteor } from 'meteor/meteor';
 import { createContainer } from 'meteor/react-meteor-data';
 import { Tasks } from '../api/tasks.js';
 import Task from './Task.jsx';
@@ -20,9 +21,11 @@ class App extends Component {
     const text = ReactDOM.findDOMNode(this.refs.textInput).value.trim();
     Tasks.insert({
       text,
-      createdAt: new Date(), // current time
+      createdAt: new Date(),    // current time
+      owner: Meteor.userId(),   // _id of logged in user
+      username: Meteor.user().username,   // username of logged-in user
     });
-    // clear form
+    // Clear form
     ReactDOM.findDOMNode(this.refs.textInput).value = '';
   }
   // Add toggleHideCompleted handler to App
