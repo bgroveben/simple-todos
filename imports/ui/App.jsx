@@ -8,7 +8,7 @@ import Task from './Task.jsx';
 class App extends Component {
   constructor(props) {
     super(props);
-    // Add initial state to App component 
+    // Add initial state to App component
     this.state = {
       hideCompleted: false,
     };
@@ -23,6 +23,11 @@ class App extends Component {
     });
     // clear form
     ReactDOM.findDOMNode(this.refs.textInput).value = '';
+  }
+  toggleHideCompleted() {
+    this.setState({
+      hideCompleted: !this.state.hideCompleted,
+    });
   }
   renderTasks() {
     return this.props.tasks.map((task) => (
