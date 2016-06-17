@@ -24,13 +24,19 @@ class App extends Component {
     // clear form
     ReactDOM.findDOMNode(this.refs.textInput).value = '';
   }
+  // Add toggleHideCompleted handler to App
   toggleHideCompleted() {
     this.setState({
       hideCompleted: !this.state.hideCompleted,
     });
   }
   renderTasks() {
-    return this.props.tasks.map((task) => (
+    // Filter tasks in renderTasks 
+    let filteredTasks = this.props.tasks;
+    if (this.state.hideCompleted) {
+      filteredTasks = filteredTasks.filter(task => !task.checked);
+    }
+    return filteredTasks.map((task) => (
       <Task key={task._id} task={task} />
     ));
   }
