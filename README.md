@@ -6,4 +6,8 @@ https://www.meteor.com/tutorials/react/running-on-mobile
 
 `// This comments JSX files`  
 `{/* This is a multi-line JSX comment for React files */}`  
-Also keep an eye out for self-closing and auto-closing HTML tags in JSX files.   
+Also keep an eye out for self-closing and auto-closing HTML tags in JSX files.
+
+In order to run this app in the android emulator, I had to open the project in Android Studio before running  
+=> meteor run android  
+iOS emulator works just fine, though.    
