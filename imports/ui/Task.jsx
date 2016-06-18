@@ -29,7 +29,6 @@ export default class Task extends Component {
           checked={this.props.task.checked}
           onClick={this.toggleChecked.bind(this)}
         />
-      // add private button that is only available to owner
       { this.props.showPrivateButton ? (
         <button className="toggle-private" onClick={this.togglePrivate.bind(this)}>
           { this.props.task.private ? 'Private' : 'Public' }
