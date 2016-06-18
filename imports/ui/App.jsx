@@ -83,6 +83,9 @@ App.propTypes = {
 };
 
 export default createContainer(() => {
+  // Subscribe to tasks publication when the App component is created 
+  Meteor.subscribe('tasks');
+
   return {
     tasks: Tasks.find({}, { sort: { createdAt: -1 } }).fetch(),
     // Update data container to return incomplete count
