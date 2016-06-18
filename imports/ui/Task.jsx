@@ -11,6 +11,10 @@ export default class Task extends Component {
   deleteThisTask() {
     Meteor.call('tasks.remove', this.props.task._id);
   }
+  // define the event handler called by the private button
+  togglePrivate() {
+    Meteor.call('tasks.setPrivate', this.props.task._id, ! this.props.task.private);
+  }
   render() {
     // Give tasks a different className when they are checked off so that we can style them easily in CSS
     const taskClassName = this.props.task.checked ? 'checked' : '';
@@ -25,7 +29,7 @@ export default class Task extends Component {
           checked={this.props.task.checked}
           onClick={this.toggleChecked.bind(this)}
         />
-      // add private button that is only available to owner 
+      // add private button that is only available to owner
       { this.props.showPrivateButton ? (
         <button className="toggle-private" onClick={this.togglePrivate.bind(this)}>
           { this.props.task.private ? 'Private' : 'Public' }
