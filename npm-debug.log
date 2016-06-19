@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/Users/benjamingrove/.meteor/packages/meteor-tool/.1.3.3_1.ip9s7i++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'meteor:practicalmeteor:chai' ]
+2 info using npm@2.15.1
+3 info using node@v0.10.45
+4 verbose install initial load of /Users/benjamingrove/Desktop/Javascript/Meteor/simple-todos/package.json
+5 verbose installManyTop reading scoped package data from /Users/benjamingrove/Desktop/Javascript/Meteor/simple-todos/node_modules/classnames/package.json
+6 verbose installManyTop reading scoped package data from /Users/benjamingrove/Desktop/Javascript/Meteor/simple-todos/node_modules/meteor-node-stubs/package.json
+7 verbose installManyTop reading scoped package data from /Users/benjamingrove/Desktop/Javascript/Meteor/simple-todos/node_modules/react/package.json
+8 verbose installManyTop reading scoped package data from /Users/benjamingrove/Desktop/Javascript/Meteor/simple-todos/node_modules/react-addons-pure-render-mixin/package.json
+9 verbose installManyTop reading scoped package data from /Users/benjamingrove/Desktop/Javascript/Meteor/simple-todos/node_modules/react-dom/package.json
+10 verbose readDependencies loading dependencies from /Users/benjamingrove/Desktop/Javascript/Meteor/simple-todos/package.json
+11 verbose stack Error: Unsupported URL Type: meteor:practicalmeteor:chai
+11 verbose stack     at parseUrl (/Users/benjamingrove/.meteor/packages/meteor-tool/.1.3.3_1.ip9s7i++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:169:13)
+11 verbose stack     at npa (/Users/benjamingrove/.meteor/packages/meteor-tool/.1.3.3_1.ip9s7i++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:75:12)
+11 verbose stack     at resolver (/Users/benjamingrove/.meteor/packages/meteor-tool/.1.3.3_1.ip9s7i++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/install.js:845:42)
+11 verbose stack     at /Users/benjamingrove/.meteor/packages/meteor-tool/.1.3.3_1.ip9s7i++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+11 verbose stack     at Array.forEach (native)
+11 verbose stack     at /Users/benjamingrove/.meteor/packages/meteor-tool/.1.3.3_1.ip9s7i++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+11 verbose stack     at Array.forEach (native)
+11 verbose stack     at asyncMap (/Users/benjamingrove/.meteor/packages/meteor-tool/.1.3.3_1.ip9s7i++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+11 verbose stack     at /Users/benjamingrove/.meteor/packages/meteor-tool/.1.3.3_1.ip9s7i++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/install.js:703:5
+11 verbose stack     at /Users/benjamingrove/.meteor/packages/meteor-tool/.1.3.3_1.ip9s7i++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/install.js:368:22
+12 verbose cwd /Users/benjamingrove/Desktop/Javascript/Meteor/simple-todos
+13 error Darwin 15.5.0
+14 error argv "node" "/Users/benjamingrove/.meteor/packages/meteor-tool/.1.3.3_1.ip9s7i++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm" "install" "--save" "meteor:practicalmeteor:chai"
+15 error node v0.10.45
+16 error npm  v2.15.1
+17 error Unsupported URL Type: meteor:practicalmeteor:chai
+18 error If you need help, you may report this error at:
+18 error     <https://github.com/npm/npm/issues>
+19 verbose exit [ 1, true ]
