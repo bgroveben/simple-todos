@@ -1,8 +1,8 @@
 Time to learn Meteor and React. This app follows the tutorial 'ToDo App with React' that is found at:  
 https://www.meteor.com/tutorials/react/creating-an-app
 
-I am here:  
-https://www.meteor.com/tutorials/react/testing
+I am done with the ToDo app; below are some more ideas for other Meteor stuff I can play with:    
+https://www.meteor.com/tutorials/react/next-steps
 
 To run the app, go to the working directory and type 'meteor' in the terminal. Yep, that's it.
 
